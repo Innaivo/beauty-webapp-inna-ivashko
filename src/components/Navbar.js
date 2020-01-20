@@ -9,7 +9,7 @@ export default class Navbar extends Component {
         isOpen:false
     }
     handleToggle = () => {
-        this.setState({isOpen:this.state.isOpen})
+        this.setState({isOpen: !this.state.isOpen})
     }
     render() {
         return (
@@ -25,7 +25,8 @@ export default class Navbar extends Component {
                         </button>
                     </div>
                     <ul className={this.state.isOpen?
-                        "nav-links show-nav":"nav-links"}>
+                        "nav-links show-nav" : "nav-links"}
+                    >
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
