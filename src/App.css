@@ -271,12 +271,12 @@ h6 {
   }
 }
 /*end of services */
-/* featured rooms */
+/* featured services */
 
-.featured-rooms {
+.featured-services {
   padding: 5rem 0;
 }
-.featured-rooms-center {
+.featured-services-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -285,18 +285,18 @@ h6 {
   grid-column-gap: 40px;
 }
 @media screen and (min-width: 776px) {
-  .featured-rooms-center {
+  .featured-services-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
-  .featured-rooms-center {
+  .featured-services-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end pf featured rooms */
+/* end pf featured services */
 /* room */
 .room {
   box-shadow: var(--lightShadow);
