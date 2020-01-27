@@ -2,7 +2,7 @@ import room1 from "./images/details-1.jpeg";
 import room2 from "./images/details-2.jpeg";
 import room3 from "./images/details-3.jpeg";
 import room4 from "./images/details-4.jpeg";
-import img1 from "./images/room-1.jpeg";
+import img1 from "./images/service-1.jpg";
 import img2 from "./images/room-2.jpeg";
 import img3 from "./images/room-3.jpeg";
 import img4 from "./images/room-4.jpeg";
@@ -21,10 +21,10 @@ export default [
       id: "1"
     },
     fields: {
-      name: "single economy",
-      slug: "single-economy",
+      name: "manicure",
+      slug: "manicure",
       type: "single",
-      price: 100,
+      price: 20,
       size: 200,
       capacity: 1,
       pets: false,
@@ -49,27 +49,6 @@ export default [
             }
           }
         },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
       ]
     }
   },

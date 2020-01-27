@@ -6,18 +6,14 @@ const ServiceContext = React.createContext();
  class ServiceProvider extends Component {
  state = {
     services: [],
-    featuredServices: [],
     loading: true
  };
  // getData
  componentDidMount(){
      // this.getData
      let services = this.formatData(items);
-     let featuredServices = services.filter(service => 
-        service.featured === true );
      this.setState({
         services,
-        featuredServices,
         loading: false
     })
  }
@@ -32,9 +28,16 @@ const ServiceContext = React.createContext();
     });
     return tempItems;
  }
+getService = (slug) => {
+    let tempServices = [...this.state.services];
+    const service = tempServices.find((service)=>service.slug === slug);
+    return service;
+}
+
 
     render() {
-        return <ServiceContext.Provider value={{ ...this.state }}>
+        return <ServiceContext.Provider 
+        value={{ ...this.state, getService:this.getService }}>
          {this.props.children}
         </ServiceContext.Provider>;
     }

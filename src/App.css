@@ -297,8 +297,8 @@ h6 {
   }
 }
 /* end pf featured services */
-/* room */
-.room {
+/* service */
+.service {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
@@ -332,7 +332,7 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
-.room-link {
+.service-link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -351,7 +351,7 @@ h6 {
 .img-container:hover .room-link {
   transform: translate(-50%, -50%) scale(1);
 }
-.room-info {
+.service-info {
   background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
