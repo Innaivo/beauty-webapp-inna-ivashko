@@ -12,7 +12,7 @@ export default function Service({service}) {
                 <div className="price-top">
                     <h6>\u20A0{price}</h6>
                 </div>
-                <Link to={`/services/${slug}`}
+                <Link to={`/pricelist/${slug}`}
                 className="service-link"> 
                 </Link>
             </div>

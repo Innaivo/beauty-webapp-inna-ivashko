@@ -28,19 +28,23 @@ const ServiceContext = React.createContext();
     });
     return tempItems;
  }
-getService = (slug) => {
+getService = slug => {
     let tempServices = [...this.state.services];
-    const service = tempServices.find((service)=>service.slug === slug);
+    const service = tempServices.find(service => service.slug === slug);
     return service;
 }
 
-
     render() {
-        return <ServiceContext.Provider 
-        value={{ ...this.state, getService:this.getService }}>
+        return (
+        <ServiceContext.Provider 
+        value={{ ...this.state,
+                    getService: this.getService }}
+        >
          {this.props.children}
-        </ServiceContext.Provider>;
+        </ServiceContext.Provider>
+        );
     }
+
 }
 
 const ServiceConsumer = ServiceContext.Consumer;
