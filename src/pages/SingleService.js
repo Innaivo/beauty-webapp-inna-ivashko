@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import {ServiceContext} from '../context';
+import StyledHero from '../components/StyledHero';
 
 
 
@@ -33,13 +34,15 @@ export default class SingleService extends Component {
         }
         const {name, description, price, images} = service;
         return (
-            <Hero hero='pricelistHero'>
+            <>
+            <StyledHero img={images[0] || this.state.defaultBcg}>
                 <Banner title={`${name}`}>
                     <Link to='/pricelist' className='btn-primary'>
                         back to pricelist 
                     </Link>
                 </Banner>
-            </Hero>
+            </StyledHero>
+            </>
         )
     }
 }
