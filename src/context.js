@@ -49,4 +49,12 @@ getService = slug => {
 
 const ServiceConsumer = ServiceContext.Consumer;
 
+export function withServiceConsumer(Component){
+    return function ConsumerWrapper(props){
+        return <ServiceConsumer>
+            {value => <Component {...props} context={value}/>}
+        </ServiceConsumer>
+    }
+}
+
 export{ServiceProvider, ServiceConsumer, ServiceContext}

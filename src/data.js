@@ -31,7 +31,7 @@ export default [
       // breakfast: false,
       // featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "В услугу маникюр входит: придание формы, бережная обработка кутикулы, ногтей и боковых валиков, смягчение маслом кутикулы и увлажнение кремом. Если вы тщательно следите за чистотой рук и ногтей, аккуратным видом, формой и хотите поддерживать здоровье кожи рук и ногтевых пластин, то рекомендуем делать маникюр хотя бы раз в две недели. Помните, что под ногтями скапливается грязь, кожа рук и кутикула пересушиваются, теряя влагу и привлекательность, поэтому маникюр без покрытия рекомендован всем без исключения - и женщинам и мужчинам. Маникюр в салоне гарантирует обработку стерильными инструментами. Своевременный маникюр помогает следить за состоянием ногтей, вовремя заметить проблему, бороться с бактериями.",
       // extras: [
       //   "Plush pillows and breathable bed linens",
       //   "Soft, oversized bath towels",
@@ -60,14 +60,14 @@ export default [
       name: "pedicure",
       slug: "pedicure",
       type: "single",
-      price: 150,
+      price: 20,
       size: 250,
       capacity: 1,
       pets: false,
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        " В стандартный педикюр входит: обработка стоп, ногтей, кутикулы и боковых валиков. Кожа ног быстро пересушивается, стопы постоянно трутся, испытывая дискомфорт от неудобной обуви и изменения температур в помещении и на улице. Ороговевшая кожа на ступнях может доставлять дискомфорт, поэтому важно регулярно делать педикюр. Услуга включает в себя удаление огрубевшей кожи стоп без повреждения здоровой кожи, удаление кутикулы, обработку ногтей и боковых валиков, придание формы ногтям, увлажнение кутикулы маслом и обработку стоп увлажняющим кремом. При отсутствии должного ухода, кожа стоп трескается, может возникнуть инфекция и ощущение сильного дискомфорта. Педикюр - профилактика грибковых заболеваний, трещин и мозолей. Внимание! Обработка мозолей, трещин и натоптышей не входит в стандартную услугу «педикюр».",
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",

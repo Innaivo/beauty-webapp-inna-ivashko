@@ -32,7 +32,7 @@ export default class SingleService extends Component {
             </div>
             );
         }
-        const {name, description, price, images} = service;
+        const {name, description, price, images, extras} = service;
         return (
             <>
             <StyledHero img={images[0] || this.state.defaultBcg}>
@@ -42,6 +42,18 @@ export default class SingleService extends Component {
                     </Link>
                 </Banner>
             </StyledHero>
+            <section className="single-service">
+                <div className="single-service-info">
+                    <article className="desc">
+                        <h3>details</h3>
+                        <p>{description}</p>
+                    </article>
+                    <article>
+                        <h6>Price: &#8364;{price}</h6>
+                    </article>
+                </div>
+            </section>
+            
             </>
         )
     }

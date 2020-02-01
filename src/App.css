@@ -360,24 +360,24 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 /* end of room  */
-/* single room*/
+/* single service*/
 
-.single-room {
+.single-service {
   padding: 5rem 0 0 0;
 }
-.single-room-images {
+/* .single-service-images {
   width: 80vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
-}
-.single-room-images img {
+} */
+/* .single-service-images img {
   width: 100%;
   display: block;
-}
-.single-room-info {
+} */
+.single-service-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -435,11 +435,11 @@ h6 {
   }
 }
 /* end of single room*/
-/* roomlist */
-.roomslist {
+/* servicelist */
+.serviceslist {
   padding: 5rem 0;
 }
-.roomslist-center {
+.serviceslist-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
