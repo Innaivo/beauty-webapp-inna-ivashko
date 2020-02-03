@@ -1,19 +1,12 @@
-import room1 from "./images/details-1.jpeg";
-import room2 from "./images/details-2.jpeg";
-import room3 from "./images/details-3.jpeg";
-import room4 from "./images/details-4.jpeg";
 import img1 from "./images/service-1.jpg";
 import img2 from "./images/service-2.jpg";
-import img3 from "./images/room-3.jpeg";
-import img4 from "./images/room-4.jpeg";
-import img5 from "./images/room-5.jpeg";
-import img6 from "./images/room-6.jpeg";
-import img7 from "./images/room-7.jpeg";
-import img8 from "./images/room-8.jpeg";
-import img9 from "./images/room-9.jpeg";
-import img10 from "./images/room-10.jpeg";
-import img11 from "./images/room-11.jpeg";
-import img12 from "./images/room-12.jpeg";
+import img3 from "./images/service-3.jpg";
+import img4 from "./images/service-4.jpg";
+import img5 from "./images/service-5.jpg";
+import img6 from "./images/service-6.jpg";
+import img7 from "./images/service-7.jpg";
+import img8 from "./images/service-8.jpg";
+
 
 export default [
   {
@@ -23,24 +16,9 @@ export default [
     fields: {
       name: "manicure",
       slug: "manicure",
-      type: "single",
-      price: 20,
-      // size: 200,
-      // capacity: 1,
-      // pets: false,
-      // breakfast: false,
-      // featured: false,
+      price: 17,
       description:
         "В услугу маникюр входит: придание формы, бережная обработка кутикулы, ногтей и боковых валиков, смягчение маслом кутикулы и увлажнение кремом. Если вы тщательно следите за чистотой рук и ногтей, аккуратным видом, формой и хотите поддерживать здоровье кожи рук и ногтевых пластин, то рекомендуем делать маникюр хотя бы раз в две недели. Помните, что под ногтями скапливается грязь, кожа рук и кутикула пересушиваются, теряя влагу и привлекательность, поэтому маникюр без покрытия рекомендован всем без исключения - и женщинам и мужчинам. Маникюр в салоне гарантирует обработку стерильными инструментами. Своевременный маникюр помогает следить за состоянием ногтей, вовремя заметить проблему, бороться с бактериями.",
-      // extras: [
-      //   "Plush pillows and breathable bed linens",
-      //   "Soft, oversized bath towels",
-      //   "Full-sized, pH-balanced toiletries",
-      //   "Complimentary refreshments",
-      //   "Adequate safety/security",
-      //   "Internet",
-      //   "Comfortable beds"
-      // ],
       images: [
         {
           fields: {
@@ -57,52 +35,16 @@ export default [
       id: "2"
     },
     fields: {
-      name: "pedicure",
-      slug: "pedicure",
-      type: "single",
+      name: "manicure + nail polish",
+      slug: "manicure-nail-polish",
       price: 20,
-      size: 250,
-      capacity: 1,
-      pets: false,
-      breakfast: false,
-      featured: false,
       description:
-        " В стандартный педикюр входит: обработка стоп, ногтей, кутикулы и боковых валиков. Кожа ног быстро пересушивается, стопы постоянно трутся, испытывая дискомфорт от неудобной обуви и изменения температур в помещении и на улице. Ороговевшая кожа на ступнях может доставлять дискомфорт, поэтому важно регулярно делать педикюр. Услуга включает в себя удаление огрубевшей кожи стоп без повреждения здоровой кожи, удаление кутикулы, обработку ногтей и боковых валиков, придание формы ногтям, увлажнение кутикулы маслом и обработку стоп увлажняющим кремом. При отсутствии должного ухода, кожа стоп трескается, может возникнуть инфекция и ощущение сильного дискомфорта. Педикюр - профилактика грибковых заболеваний, трещин и мозолей. Внимание! Обработка мозолей, трещин и натоптышей не входит в стандартную услугу «педикюр».",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
+        "Богатая палитра цветов от ведущих мировых производителей. Стандартный лак подойдет тем, кто обожает постоянно менять цвет ногтей и поддерживать свежесть маникюра. Без труда удаляется средством для снятия лака, не проникает глубоко в ногтевую пластину.",
       images: [
         {
           fields: {
             file: {
               url: img2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
             }
           }
         }
@@ -114,26 +56,11 @@ export default [
       id: "3"
     },
     fields: {
-      name: "single standard",
-      slug: "single-standard",
-      type: "single",
-      price: 250,
-      size: 300,
-      capacity: 1,
-      pets: true,
-      breakfast: false,
-      featured: false,
+      name: "manicure + gel polish",
+      slug: "manicure-gel-polish",
+      price: 25,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
+        "Богатый выбор самых модных дизайнов, роскошная палитра гель-лаков мировых производителей. В отличие от обычного лака, гель-лак обладает повышенной износостойкостью и при соблюдении всех рекомендаций и правильной носке покрытие гель-лак держится на ногтях от 2 до 3 недель. Покрытие гель-лаком - это экономичное решение для тех, кто ценит своё время, деньги и хочет всегда иметь ухоженные ногти. Еще одним преимуществом гель-лаков является возможность выбирать интересные и модные дизайн-решения, регулировать яркость цвета, создавать дизайн ногтей под определённый стиль или событие. Обратите внимание, что дизайны и снятие гель - лака оплачиваются отдельно.",
       images: [
         {
           fields: {
@@ -141,56 +68,21 @@ export default [
               url: img3
             }
           }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
         }
       ]
     }
   },
+  
   {
     sys: {
       id: "4"
     },
     fields: {
-      name: "single deluxe",
-      slug: "single-deluxe",
-      type: "single",
-      price: 300,
-      size: 400,
-      capacity: 1,
-      pets: true,
-      breakfast: true,
-      featured: false,
+      name: "pedicure",
+      slug: "pedicure",
+      price: 22,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
+      " В стандартный педикюр входит: обработка стоп, ногтей, кутикулы и боковых валиков. Кожа ног быстро пересушивается, стопы постоянно трутся, испытывая дискомфорт от неудобной обуви и изменения температур в помещении и на улице. Ороговевшая кожа на ступнях может доставлять дискомфорт, поэтому важно регулярно делать педикюр. Услуга включает в себя удаление огрубевшей кожи стоп без повреждения здоровой кожи, удаление кутикулы, обработку ногтей и боковых валиков, придание формы ногтям, увлажнение кутикулы маслом и обработку стоп увлажняющим кремом. При отсутствии должного ухода, кожа стоп трескается, может возникнуть инфекция и ощущение сильного дискомфорта. Педикюр - профилактика грибковых заболеваний, трещин и мозолей. Внимание! Обработка мозолей, трещин и натоптышей не входит в стандартную услугу «педикюр».",
       images: [
         {
           fields: {
@@ -199,27 +91,6 @@ export default [
             }
           }
         },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
       ]
     }
   },
@@ -228,52 +99,16 @@ export default [
       id: "5"
     },
     fields: {
-      name: "double economy",
-      slug: "double-economy",
-      type: "double",
-      price: 200,
-      size: 300,
-      capacity: 2,
-      pets: false,
-      breakfast: false,
-      featured: false,
+      name: "pedicure + nail polish",
+      slug: "pedicure-nail-polish",
+      price: 26,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
+        "Покрытие лаком-идеальный вариант для тех, кто любит разнообразие, ведь такое покрытие можно менять без вреда для ногтевой пластины хоть каждый день, выбирая разные оттенки под каждый наряд. Перед нанесением лака необходимо сделать педикюр: обработать стопы, ногти, кутикулу и боковые валики, чтобы ваши ножки выглядели неотразимо. .",
       images: [
         {
           fields: {
             file: {
               url: img5
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
             }
           }
         }
@@ -285,26 +120,11 @@ export default [
       id: "6"
     },
     fields: {
-      name: "double basic",
-      slug: "double-basic",
-      type: "double",
-      price: 250,
-      size: 350,
-      capacity: 2,
-      pets: false,
-      breakfast: false,
-      featured: false,
+      name: "manicure + gel polish",
+      slug: "manicure-gel-polish",
+      price: 30,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
+        "В отличие от обычного лака, гель-лак дольше держится на ногтях и сохраняет блеск до самого снятия. К тому же, гель-лак защищает ногтевую пластину от механических и температурных воздействий. Чтобы добавить разнообразия в привычный педикюр, выделите один или несколько ноготков блёстками, бульонками, пайетками или матовым покрытием. Обратите внимание, что дизайны и снятие гель - лака оплачиваются отдельно.",
       images: [
         {
           fields: {
@@ -313,27 +133,6 @@ export default [
             }
           }
         },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
       ]
     }
   },
@@ -342,52 +141,16 @@ export default [
       id: "7"
     },
     fields: {
-      name: "double standard",
-      slug: "double-standard",
-      type: "double",
-      price: 300,
-      size: 400,
-      capacity: 2,
-      pets: true,
-      breakfast: false,
-      featured: false,
+      name: "men haircut",
+      slug: "men-haircut",
+      price: 16,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
+        "Men haircut...",
       images: [
         {
           fields: {
             file: {
               url: img7
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
             }
           }
         }
@@ -399,26 +162,11 @@ export default [
       id: "8"
     },
     fields: {
-      name: "double deluxe",
-      slug: "double-deluxe",
-      type: "double",
-      price: 400,
-      size: 500,
-      capacity: 2,
-      pets: true,
-      breakfast: true,
-      featured: true,
+      name: "boys haircut",
+      slug: "boys-haircut",
+      price: 14,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
+        "Детские стрижки для юных джентльментов позволяют малышу чувствовать себя комфортно и раскованно: волосы не мешают во время игр и не вызывают дискомфорт. На ваш выбор любая спортивная стрижка, универсальная стрижка «ежик» или любая стрижка на волосы средней длины.",
       images: [
         {
           fields: {
@@ -426,314 +174,8 @@ export default [
               url: img8
             }
           }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
         }
       ]
     }
   },
-  {
-    sys: {
-      id: "9"
-    },
-    fields: {
-      name: "family economy",
-      slug: "family-economy",
-      type: "family",
-      price: 300,
-      size: 500,
-      capacity: 3,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img9
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    sys: {
-      id: "10"
-    },
-    fields: {
-      name: "family basic",
-      slug: "family-basic",
-      type: "family",
-      price: 350,
-      size: 550,
-      capacity: 4,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img10
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    sys: {
-      id: "11"
-    },
-    fields: {
-      name: "family standard",
-      slug: "family-standard",
-      type: "family",
-      price: 400,
-      size: 600,
-      capacity: 5,
-      pets: true,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img11
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    sys: {
-      id: "12"
-    },
-    fields: {
-      name: "family deluxe",
-      slug: "family-deluxe",
-      type: "family",
-      price: 500,
-      size: 700,
-      capacity: 6,
-      pets: true,
-      breakfast: true,
-      featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img12
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    sys: {
-      id: "13"
-    },
-    fields: {
-      name: "presidential",
-      slug: "presidential-room",
-      type: "presidential",
-      price: 600,
-      size: 1000,
-      capacity: 10,
-      pets: true,
-      breakfast: true,
-      featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: room1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  }
 ];
