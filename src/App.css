@@ -156,6 +156,12 @@ h6 {
   }
 }
 /* end of navbar */
+/*Footer*/
+#main-footer {
+  background-color: 
+  #fff;
+}
+/*end of Footer*/
 /* Hero */
 .defaultHero,
 .pricelistHero {
@@ -167,7 +173,7 @@ h6 {
 }
 .pricelistHero {
   background-image: url("./images/service-1.jpg");
-  min-height: 60vh;
+  min-height: 40vh;
 }
 /* End of Hero */
 /* Banner */
@@ -191,7 +197,7 @@ h6 {
 }
 .banner p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 576px) {
   .banner {
@@ -271,32 +277,6 @@ h6 {
   }
 }
 /*end of services */
-/* featured services */
-
-.featured-services {
-  padding: 5rem 0;
-}
-.featured-services-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}
-@media screen and (min-width: 776px) {
-  .featured-services-center {
-    width: 90vw;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  }
-}
-@media screen and (min-width: 992px) {
-  .featured-services-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-/* end pf featured services */
 /* service */
 .service {
   box-shadow: var(--lightShadow);
@@ -334,13 +314,15 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
-.service-link {
+/* .service-link {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: scale(0);
   transition: all 0.3s linear;
-}
+  cursor: pointer;
+} */
+
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -350,7 +332,7 @@ h6 {
 .img-container:hover .price-top {
   opacity: 0;
 }
-.img-container:hover .room-link {
+.img-container:hover .service-link {
   transform: translate(-50%, -50%) scale(1);
 }
 .service-info {
@@ -360,7 +342,10 @@ h6 {
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
+  color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
 }
+
 /* end of room  */
 /* single service*/
 
@@ -413,13 +398,7 @@ h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-.extras {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
-}
+
 @media screen and (min-width: 992px) {
   .single-room-images,
   .single-room-info,

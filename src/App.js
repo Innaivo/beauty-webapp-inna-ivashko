@@ -8,6 +8,7 @@ import Pricelist from './pages/Pricelist';
 import SingleService from './pages/SingleService';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
     <Route component={Error}/>
 
   </Switch>
-
+  <Footer />
   </>
   );
 }

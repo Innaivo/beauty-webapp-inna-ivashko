@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import defaultBcg from '../images/service-1.jpg';
-import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import {ServiceContext} from '../context';
@@ -11,7 +10,6 @@ import StyledHero from '../components/StyledHero';
 export default class SingleService extends Component {
     constructor (props){
         super(props)
-        //console.log(this.porops);
         this.state = {
             slug:this.props.match.params.slug,
             defaultBcg
@@ -32,7 +30,7 @@ export default class SingleService extends Component {
             </div>
             );
         }
-        const {name, description, price, images, extras} = service;
+        const {name, description, price, images} = service;
         return (
             <>
             <StyledHero img={images[0] || this.state.defaultBcg}>
