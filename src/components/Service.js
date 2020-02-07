@@ -14,6 +14,7 @@ export default function Service({service}) {
                 <div className="price-top">
                     <h6>&#8364;{price}</h6>
                 </div>
+                
             </div>
             <p className="service-info">{name}</p>
             </Link>
