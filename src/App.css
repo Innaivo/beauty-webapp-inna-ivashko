@@ -158,10 +158,9 @@ h6 {
 /* end of navbar */
 /*Footer*/
 .main-footer {
-  background-color: 
-  #fff;
-  display: block;
-  box-sizing: border-box;
+  background-color: rgb(75, 185, 85);
+  /* display: block;
+  box-sizing: border-box; */
 }
 .footer-container {
   position: relative;
@@ -173,31 +172,22 @@ h6 {
 .footer-widgets {
   padding: 6% 0 0;
 }
-.footer-clearfix {
-  display: block;
-  visibility: hidden;
-  clear: both;
-  height: 0;
-  font-size: 0;
-  content: " ";
-}
 
 .footer-widget {
   width: 20.875%;
   margin-right: 5.5%;
   margin-bottom: 5.5%;
-  color: #ffffff;
+  color: #d44545;
   float: left;
 }
-.footer-widget
-.fwidget:last-child {
+.footer-widget .fwidget:last-child {
   margin-bottom: 0 !important;
 }
 .et_pb_widget {
   float: left;
   max-width: 100%;
 }
-#main-footer .footer-widget h4 {
+.main-footer .footer-widget h4 {
   color:#222;
 }
 .footer-widget h4 {
@@ -207,13 +197,14 @@ h6 {
   text-transform: uppercase;
   text-decoration: none;
 }
-.adresDetails {
+.adressDetails {
   content: "\f08e";
   /* font-family: FontAwesome; */
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
   padding-left: 0.5em;
+  text-align: left;
 
 }
 .ftitle {

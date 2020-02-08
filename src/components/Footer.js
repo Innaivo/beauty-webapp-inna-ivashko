@@ -4,16 +4,17 @@ export default function Footer() {
     return (
         <footer className="main-footer">
             <div className="footer-container">
-                <div className="footer-widgets" className="footer-clearfix">
+                <div className="footer-widgets">
                     <div className="footer-widget">
                     <div className="fwidget et_pb_widget">
                         <h4 className="ftitle"> Beauty art</h4>
                         <div>
-                        <p><a className="adresDetails"
+                        <a className="adressDetails"
                         href="https://www.google.com/maps">
-                        Street 0
-                        1111AB&nbsp;Eindhoven </a>
-<a href="tel:040 254 49 85">040 254 49 85</a></p>
+                        <h4>Street 0
+                        <br/>
+                        1111AB&nbsp;Eindhoven</h4> </a>
+<a href="tel:040 254 49 85">040 254 49 85</a>
 <h4 className="section-title">VOLG ONS</h4>
 {/* <p><a class="facebookLink" href="https://www.facebook.com/AffinityBeautyNails/">Facebook</a><br>
 <a class="instaLink" href="https://www.instagram.com/affinity_beautynails/">Instagram</a><br>
