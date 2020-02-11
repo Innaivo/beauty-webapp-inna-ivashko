@@ -157,48 +157,7 @@ h6 {
 }
 /* end of navbar */
 
-/*Footer*/
-#main-footer {
-  background-color: rgb(75, 185, 85);
-  /* display: block;
-  box-sizing: border-box; */
-}
-.footer-container {
-  position: relative;
-  text-align: left;
-  width: 80%;
-  max-width: 1080px;
-  margin: auto;
-  line-height: 1.5;
-}
-#footer-widgets {
-  padding: 6% 0 0;
-}
-
-.footer-widget {
-  /* width: 20.875%;
-  margin-right: 5.5%;
-  margin-bottom: 5.5%; */
-  /* color: #d44545; */
-  float: left;
-}
-.et_pb_gutters3.et_pb_footer_columns4 .footer-widget {
-  width: 20.875%;
-}
-.et_pb_gutters3 .footer-widget {
-  margin-right: 5.5%;
-  margin-bottom: 5.5%;
-}
-.footer-widget .fwidget:last-child {
-  margin-bottom: 0 !important;
-}
-.et_pb_widget {
-  float: left;
-  max-width: 100%;
-}
-/* .main-footer .footer-widget h4 {
-  color:#848484;
-} */
+/*Footer old*/
 .footer-widget h4 {
   font-size: 1rem;
   font-weight: bold;
@@ -225,14 +184,170 @@ h4.ftitle {
   margin-bottom: 0.3em;
   margin-top: 1em;
 }
-.foot-icon {
-  /* padding-right: 0.5em; */
-  /* text-decoration: inherit; */
+/*end of old Footer*/
+
+/* Footer */
+/* The footer is fixed to the bottom of the page */
+ 
+footer{
+	position: relative;
+	bottom: 0;
 }
-/* .text-widget {
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+	background-color: #f3f3f3;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	/* font: bold 16px sans-serif; */
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 30%;
+}
+  
+/* The company logo */
+.footer-distributed .footer-left img{
+	width: 40%;
+  /* height: 10%; */
+}
+  
+/* Footer links */
+.footer-distributed .footer-links{
+	color:  #222;
+  margin: 20px 0 12px;
+  font: bold 16px sans-serif; 
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+  color:  inherit;
+  letter-spacing: 1.5px;  
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	/* background-color:  #8f9296; */
+	border-radius: 2px;
+ 
+	font-size: 28px;
+	color: #222;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ .footer-distributed .footer-copyright{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+} 
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+/* .footer-center {
   text-align: left;
-} */
-/*end of Footer*/
+}  */
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+ .footer-distributed .footer-center i{
+ 	background-color:  #33383b; 
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	/* line-height: 42px; */
+	margin: 10px 15px;
+	vertical-align: middle;
+} 
+ 
+/* .footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+  */
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #222;
+	vertical-align: middle;
+	margin:0;
+}
+  
+.footer-distributed .footer-center p a{
+	color:  #222;
+	text-decoration: none;
+}
+ .adressDetails a{
+  text-decoration: none;
+}
+
+ 
+/* Footer Right */
+.footer-distributed .footer-right{
+	width: 30%;
+}
+ 
+.ftitle {
+   color:#796850;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* Here is the code for Responsive Footer */
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
+/* end of Footer */
+
 /* Hero */
 .defaultHero,
 .pricelistHero {
