@@ -15,8 +15,8 @@ export default function Footer() {
                     <Link to="/">Home&nbsp;</Link>
 					|
 					<Link to="/pricelist">&nbsp;Pricelist&nbsp;</Link>
-					|
-					<Link to="#">&nbsp;Contact</Link>
+					{/* |
+					<Link to="#">&nbsp;Contact</Link> */}
                 </p>
 				<p class="footer-icons">
 					<a href="https://www.facebook.com/"><AiFillFacebook/></a>
@@ -38,27 +38,22 @@ export default function Footer() {
 				</div>
 				<div>
 					<a href="mailto:beauty.art@info.com">
-					<i><FaEnvelope/></i>	
+					<i className="envelope"><FaEnvelope/></i>	
 					<p>beauty.art@info.com</p></a>
 				</div>
-               
-
-        
 			</div>
 			<div class="footer-right">
-					<h4 class="ftitle">opening hours </h4>
-     <table>
-        <tr><th>Monday</th><td>9am - 5pm</td></tr>
-        <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
-        <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
-        <tr><th>Thursday</th><td>9am - 5pm</td></tr>
-        <tr><th>Friday</th><td>9am - 5pm</td></tr>  
-        <tr><th>Saturday</th><td>9am - 3pm</td></tr>
-        <tr><th>Sunday</th><td>Closed</td></tr>
-    </table>
+				<h6 class="ftitle">opening hours </h6>
+				<table>
+					<tr><th>Monday</th><td>9am - 5pm</td></tr>
+					<tr><th>Tuesday</th><td>9am - 5pm</td></tr>
+					<tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+					<tr><th>Thursday</th><td>9am - 5pm</td></tr>
+					<tr><th>Friday</th><td>9am - 5pm</td></tr>  
+					<tr><th>Saturday</th><td>9am - 3pm</td></tr>
+					<tr><th>Sunday</th><td>Closed</td></tr>
+				</table>
 			</div>
 		</footer>
-
-
     )
 }
