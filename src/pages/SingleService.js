@@ -47,7 +47,7 @@ export default class SingleService extends Component {
                         <p>{description}</p>
                     </article>
                     <article>
-                        <h6>Price: &#8364;{price}</h6>
+                        <h4>Price: &#8364;{price}</h4>
                     </article>
                 </div>
             </section>

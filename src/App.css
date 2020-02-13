@@ -112,11 +112,11 @@ h6 {
   color: var(--primaryColor);
 }
 .nav-links {
-/* height and overflow:hidden -> hide Navbar links */
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  margin: auto 0px;
 }
 .nav-links a {
   display: block;
@@ -159,8 +159,7 @@ h6 {
 
 /* Footer */
 /* The footer is fixed to the bottom of the page */
- 
-footer{
+ footer{
 	position: relative;
 	bottom: 0;
 }
@@ -173,7 +172,6 @@ footer{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	/* font: bold 16px sans-serif; */
 	padding: 50px 50px 60px 50px;
 	margin-top: 80px;
 }
@@ -186,12 +184,11 @@ footer{
  
 /* Footer left */
 .footer-distributed .footer-left{
-	width: 30%;
+  width: 30%;
 }
 /* The company logo */
 .footer-distributed .footer-left img{
-	width: 40%;
-  /* height: 10%; */
+  width: 40%;
 }
 /* Footer links */
 .footer-distributed .footer-links{
@@ -293,8 +290,12 @@ th{
   table{
     margin: 0 auto;
     text-align: left;
-	}
+  }
+  .footer-distributed .footer-left img{
+    width: 20rem;
+  }
 }
+
 /* end of Footer */
 
 /* Hero */
@@ -322,7 +323,9 @@ th{
   letter-spacing: var(--mainSpacing);
 }
 .banner h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-family: felix titling;
+  font-weight: normal;
 }
 .banner div {
   width: 10rem;
@@ -417,10 +420,6 @@ th{
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
-.room:hover {
-  box-shadow: var(--darkShadow);
-}
-
 .img-container {
   position: relative;
 }
@@ -433,8 +432,6 @@ th{
   position: absolute;
   top: 0;
   left: 0;
-  /* background: rgba(0, 0, 0, 0.8);
-  color: var(--mainWhite); */
   color: var(--mainBlack);
   background: var(--primaryColor);
   padding: 0.3rem 0.6rem 0.5rem;
@@ -481,18 +478,6 @@ text-decoration: none;
 .single-service {
   padding: 5rem 0 0 0;
 }
-/* .single-service-images {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 50px;
-} */
-/* .single-service-images img {
-  width: 100%;
-  display: block;
-} */
 .single-service-info {
   width: 80vw;
   display: grid;
@@ -509,6 +494,8 @@ text-decoration: none;
 }
 .desc p {
   line-height: 1.5;
+  font-size: x-large;
+  font-family: felix-titling;
 }
 .info h3,
 .info h6 {
@@ -519,32 +506,17 @@ text-decoration: none;
 .info h6 {
   font-weight: 300;
 }
-.room-extras {
-  width: 80vw;
-  margin: 0 auto 3rem auto;
-}
-.room-extras h6 {
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
 
 @media screen and (min-width: 992px) {
-  .single-room-images,
-  .single-room-info,
-  .room-extras {
+  .single-service-info{
     width: 95vw;
     max-width: 1170px;
-  }
-  .single-room-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
   }
   .info {
     padding-left: 3rem;
   }
 }
-/* end of single room*/
+/* end of single service*/
 /* servicelist */
 .serviceslist {
   padding: 5rem 0;
@@ -559,12 +531,12 @@ text-decoration: none;
 }
 
 @media screen and (min-width: 776px) {
-  .roomslist-center {
+  .serviceslist-center {
     width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .roomslist-center {
+  .serviceslist-center {
     width: 95vw;
     max-width: 1170px;
   }

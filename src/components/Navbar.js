@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../images/logo.svg';
+import logo from '../images/logo2.svg';
 import { FaAlignRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
