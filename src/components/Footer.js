@@ -22,7 +22,7 @@ export default function Footer() {
 					<a href="https://www.facebook.com/"><AiFillFacebook/></a>
 					<a href="https://www.instagram.com"><AiOutlineInstagram/></a>
 				</p>
-				<p class="footer-copyright">© 2020 Copyright Beauty Art.</p>
+				<p class="footer-copyright"> 2020 Made by Inna Ivashko.</p>
 			</div>
 			<div class="footer-center">
 				<div>

@@ -82,7 +82,7 @@ export default [
       slug: "pedicure",
       price: 22,
       description:
-      "The standard pedicure includes: treatment of feet, nails and cuticles. The skin of the legs become dry quickly, the feet are often subject to rubbing, experiencing discomfort from uncomfortable shoes and changes in temperature indoors and outdoors. It is important to regularly do pedicures. The service includes removing coarsened skin of the feet without damaging healthy skin, removing the cuticle, treating the nails, shaping the nails, moisturizing the cuticle with oil and treating the feet with a moisturizing cream. Pedicure - prevention of fungal diseases, cracks and corns. Please note, treatment of corns and cracks is not included in the standard pedicure service.",
+      "The standard pedicure includes: treatment of feet, nails and cuticles. The skin of the legs become dry quickly, the feet are often subject to rubbing, experiencing discomfort from uncomfortable shoes and changes in temperature indoors and outdoors. It is important to regularly do pedicures. The service includes removing coarsened skin of the feet without damaging healthy skin, removing the cuticle, treating the nails, shaping the nails, moisturizing the cuticle with oil and treating the feet with a moisturizing cream. Pedicure helps to prevent fungal diseases, cracks and corns. Please note, treatment of corns and cracks is not included in the standard pedicure service.",
       images: [
         {
           fields: {
