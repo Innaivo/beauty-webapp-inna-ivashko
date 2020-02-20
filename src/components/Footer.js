@@ -8,25 +8,25 @@ import {FaEnvelope} from "react-icons/fa";
 
 export default function Footer() {
     return (
-    	<footer class="footer-distributed">
-			<div class="footer-left">
+    	<footer className="footer-distributed">
+			<div className="footer-left">
                 <img src={logo} alt="Beauty Art"/>
-				<p class="footer-links">
+				<p className="footer-links">
                     <Link to="/">Home&nbsp;</Link>
 					|
 					<Link to="/pricelist">&nbsp;Pricelist&nbsp;</Link>
-					{/* |
-					<Link to="#">&nbsp;Contact</Link> */}
+					|
+					<Link to="/contact">&nbsp;Contact</Link>
                 </p>
-				<p class="footer-icons">
+				<p className="footer-icons">
 					<a href="https://www.facebook.com/"><AiFillFacebook/></a>
 					<a href="https://www.instagram.com"><AiOutlineInstagram/></a>
 				</p>
-				<p class="footer-copyright"> 2020 Made by Inna Ivashko</p>
+				<p className="footer-copyright"> 2020 Made by Inna Ivashko</p>
 			</div>
-			<div class="footer-center">
+			<div className="footer-center">
 				<div>
-                <a class="adressDetails" href="https://www.google.com/maps">
+                <a href="https://www.google.com/maps">
 					<i><MdLocationOn/></i>
 					<p>Street 1 <br/>
 					1234AB Eindhoven </p> </a>
@@ -42,8 +42,8 @@ export default function Footer() {
 					<p>beauty.art@info.com</p></a>
 				</div>
 			</div>
-			<div class="footer-right">
-				<h6 class="ftitle">opening hours </h6>
+			<div className="footer-right">
+				<h6 className="ftitle">opening hours </h6>
 				<table>
 					<tr><th>Monday</th><td>9am - 5pm</td></tr>
 					<tr><th>Tuesday</th><td>9am - 5pm</td></tr>

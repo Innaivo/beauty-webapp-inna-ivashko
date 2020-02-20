@@ -543,3 +543,36 @@ text-decoration: none;
 }
 /* servicelist */
 
+/* contacts */
+.contacts {
+  max-width: 1200px;
+  padding: 100px 15px 170px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+.contacts-info {
+    width: 40%;
+/*     padding-right: 35px; */
+    padding-left: 80px;
+    box-sizing: border-box;
+    float: left;
+}
+.contacts-map {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  width: 40%;
+}
+/* .contacts .contacts-info,
+.contacts .contacts-map,{
+	display: inline-block;
+} */
+
+#map {
+  height: 100px;  /* The height is 400 pixels */
+/*   width: 100%;  /* The width is the width of the web page */ 
+  box-sizing: border-box;
+}
+/* contacts */
