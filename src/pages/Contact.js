@@ -17,7 +17,7 @@ export default function Contact() {
         <StyledHero img={defaultBcg}>            
         <Banner title="contact">
             <Link to='/' className="btn-primary">
-                home
+                return home
             </Link>
             </Banner>
         </StyledHero>
