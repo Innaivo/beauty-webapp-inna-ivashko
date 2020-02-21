@@ -23,8 +23,8 @@ export default function Contact() {
         </StyledHero>
         <section className="contacts">
 			<div className="contacts-info">
-  				<div className="adressDetails">
-    				<img src={logo} alt="Beauty Art"/>
+  				<div>
+				  	<h6 className="ftitle">address </h6>
     				<p>Street 1, 1234AB, Eindhoven</p>
   				</div>
   				<div>
@@ -36,10 +36,16 @@ export default function Contact() {
 					<a href="mailto:beauty.art@info.com">
 					<i className="envelope"><FaEnvelope/></i>	
 					<p>beauty.art@info.com</p></a>
-      				<a href="https://www.facebook.com/"><AiFillFacebook/>Facebook</a>
-      				<a href="https://www.instagram.com"><AiOutlineInstagram/>Instagram</a>
 				</div>
-  				<div className="">
+				<div>
+      				<a href="https://www.facebook.com/">
+					<i><AiFillFacebook/></i>
+					<p>Facebook</p></a>
+      				<a href="https://www.instagram.com">
+					<i><AiOutlineInstagram/></i>
+					<p>Instagram</p></a>
+				</div>
+  				<div className="contacts-opening">
 					<h6 className="ftitle">opening hours </h6>
 					<table>
 						<tr><th>Monday</th><td>9am - 5pm</td></tr>

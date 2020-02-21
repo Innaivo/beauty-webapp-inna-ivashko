@@ -27,6 +27,9 @@ export default function Navbar() {
                             <li>
                                 <Link to="/pricelist">Pricelist</Link>
                             </li>
+                            <li>
+                                <Link to="/contact">&nbsp;Contact</Link>
+                            </li>
                         </ul>
                 </div>
             </nav>

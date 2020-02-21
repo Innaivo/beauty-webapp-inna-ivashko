@@ -34,7 +34,8 @@ export default function Footer() {
                 <div>
 					<a href="tel:040 123 45 67">
 					<i><MdPhone/></i>	
-					<p>040 123 45 67</p></a>
+					<p>040 123 45 67</p>
+					</a>
 				</div>
 				<div>
 					<a href="mailto:beauty.art@info.com">
