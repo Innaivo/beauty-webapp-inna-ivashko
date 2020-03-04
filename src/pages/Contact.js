@@ -8,6 +8,7 @@ import logo from '../images/logo2.svg';
 import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
 import MapContainer from '../components/MapContainer';
+import FormAppointment from '../components/FormAppointment';
 import defaultBcg from '../images/service-1.jpg';
 
 
@@ -62,6 +63,7 @@ export default function Contact() {
 				<MapContainer/>
 			</div>
 		</section> 
+		<FormAppointment/>
         </>
     )
 }
