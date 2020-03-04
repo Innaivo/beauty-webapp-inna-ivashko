@@ -7,46 +7,16 @@
     "node": "12.13.1"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
     "compression": "^1.7.4",
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "express-csp-header": "^2.3.2",
-    "google-maps-react": "^2.0.2",
-    "helmet": "^3.21.2",
-    "moment": "^2.24.0",
     "mongoose": "^5.9.3",
-    "react": "^16.12.0",
-    "react-datepicker": "^2.13.0",
-    "react-dom": "^16.12.0",
-    "react-icons": "^3.8.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
-    "styled-components": "^5.0.0"
+    "concurrently": "^4.0.1"
   },
   "scripts": {
-    "start": "node server.js",
-    "devstart": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "start": "nodemon server.js",
+    "frontend": "cd frontend && npm run devstart",
+    "devstart": "concurrently --kill-others-on-fail \"npm start\" \"npm run frontend\" ",
+    "build": ""
   }
 }
