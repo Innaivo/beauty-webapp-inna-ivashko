@@ -8,46 +8,83 @@ export default class FormAppointment extends Component {
     super(props);
     this.state = {
       date: new Date(),
+      service: '',
+      time: new Date(),
       username: '',
-      age: null,
+      phone: null,
+      email: '',
+      remark: ''
     };
+    // this.handleChange = this.handleChange.bind(this);
   }
-  handleChange = (event) => {
+  handleChange= event =>{
     const target = event.target;
-    let nam = target.name;
-    let val = target.value;
-    if (nam === "age") {
-      if (!Number(val)) {
-        alert("Your age must be a number");
-      }
-    }
-    this.setState({[nam]: val});
+    const name = target.name;
+    const value = target.type;
+    // if (name === "phone") {
+    //   if (!Number(value)) {
+    //     alert("Phone must be a number");
+    //   }
+    // }
+    this.setState({[name]: value});
   }
-
 
   render() {
     return (
       <form>
       <h4>Make an appointment</h4>
-      <p>Pick up a date</p>
-      <input
-        type='date'
-        name='date'
-        onChange={this.handleChange}
-        locale="en-GB" // weeks start on Monday
+      <p>Date</p>
+      <DatePicker
+        dateFormat="MMMM d, yyyy"
+        selected={this.state.date}
+        onChange={date => this.setState({date: date})}
       />
-      <p>Enter your name:</p>
+      <p>Service</p>
+      <select val={this.state.service} onChange={this.handleChange}>
+      <option val="manicure">Manicure</option>
+      <option val="manicure+nail polish">Manicure + Nail Polish</option>
+      <option val="manicure+gel polish">Manicure + Gel Polish</option>
+      <option val="pedicure">Pedicure</option>
+      <option val="pedicure+nail polish">Pedicure + Nail Polish</option>
+      <option val="pedicure+gel polish">Pedicure + Gel Polish</option>
+      <option val="men haircut">Men Haircut</option>
+      <option val="boys haircut">Boys Haircut</option>
+      </select>
+      <p>Time</p>
+      <DatePicker
+        selected={this.state.time}
+        onChange={date => this.setState({time: date})}
+        showTimeSelect
+        showTimeSelectOnly
+        timeIntervals={45}
+        timeCaption="Time"
+        dateFormat="h:mm aa"
+      />
+      <p>Name</p>
       <input
         type='text'
         name='username'
         onChange={this.handleChange}
       />
-      <p>Enter your age:</p>
+      <p>Phone</p>
       <input
-        type='text'
-        name='age'
+        type='number'
+        name='phone'
         onChange={this.handleChange}
       />
+      <p>Email</p>
+      <input
+        type='text'
+        name='email'
+        onChange={this.handleChange}
+      />      
+      <p>Remark</p>
+      <input
+        type='text'
+        name='remark'
+        onChange={this.handleChange}
+      />
+
       </form>
     );
   }

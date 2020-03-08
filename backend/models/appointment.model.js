@@ -9,7 +9,8 @@ const AppointmentSchema = new Schema({
     time: {type: Number, required: true},
     username: {type: String, required: true, min: 3},
     phone: {type: String, required: true, pattern: '^06*[0-9]{8}$'},
-    email: {type: String, required: true}
+    email: {type: String, required: true},
+    remark: {type: String}
 });
 
 module.exports = mongoose.model('Appointment', AppointmentSchema);
