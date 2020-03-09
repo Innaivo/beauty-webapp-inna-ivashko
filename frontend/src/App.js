@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FormAppointment from './pages/FormAppointment';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <Route exact path="/pricelist/" component={Pricelist}/>
     <Route exact path="/pricelist/:slug" component={SingleService}/>
     <Route exact path="/contact/" component={Contact}/>
+    <Route exact path="/appointment/" component={FormAppointment}/>
     <Route component={Error}/>
 
   </Switch>

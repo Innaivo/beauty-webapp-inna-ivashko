@@ -33,7 +33,7 @@ export default function Navbar() {
                             <Link to="/contact">Contact</Link>
                         </li>
                         <li>
-                            <Link to="/contact" id="btn-booking">book now</Link>
+                            <Link to="/appointment" id="btn-booking">book now</Link>
                         </li>
                     </ul>
                 </div>

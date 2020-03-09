@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
+import StyledHero from '../components/StyledHero';
+import Banner from '../components/Banner';
+import defaultBcg from '../images/service-1.jpg';
 
 export default class FormAppointment extends Component {
   constructor(props) {
@@ -32,6 +37,15 @@ export default class FormAppointment extends Component {
 
   render() {
     return (
+      <>
+      <StyledHero img={defaultBcg}>            
+      <Banner title="book now">
+          <Link to='/' className="btn-primary">
+              return home
+          </Link>
+          </Banner>
+      </StyledHero>
+
       <form onSubmit={this.handleSubmit}>
       <h4>Make an appointment</h4>
       <p>Date</p>
@@ -87,6 +101,7 @@ export default class FormAppointment extends Component {
       />
       <input type="submit" value="Submit" />
       </form>
+    </>
     );
   }
 }
