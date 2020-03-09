@@ -69,6 +69,27 @@ h6 {
   background: transparent;
   color: var(--primaryColor);
 }
+#btn-booking {
+  display: block;
+  text-decoration: none;
+  font-weight: 100;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background:#d4c7b5;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  /* padding: 0.4rem 0.9rem; */
+  border: 1px solid #d4c7b5;
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#btn-booking:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
 .loading {
   text-transform: capitalize;
   text-align: center;
@@ -134,7 +155,7 @@ h6 {
 }
 
 .show-nav {
-  height: 150px;
+  height: 220px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {

@@ -4,6 +4,7 @@ import { FaAlignRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
+
 export default function Navbar() { 
     const [isOpen, setOpen] = useState(false);
     const handleToggle = () => setOpen(!isOpen);
@@ -22,16 +23,19 @@ export default function Navbar() {
                     <ul className={isOpen?
                         "nav-links show-nav" : "nav-links"}
                     >
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/pricelist">Pricelist</Link>
-                            </li>
-                            <li>
-                                <Link to="/contact">Contact</Link>
-                            </li>
-                        </ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/pricelist">Pricelist</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">Contact</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact" id="btn-booking">book now</Link>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         )

@@ -17,21 +17,22 @@ export default class FormAppointment extends Component {
     };
     // this.handleChange = this.handleChange.bind(this);
   }
-  handleChange= event =>{
-    const target = event.target;
-    const name = target.name;
-    const value = target.type;
+  handleChange = event =>{
     // if (name === "phone") {
     //   if (!Number(value)) {
     //     alert("Phone must be a number");
     //   }
     // }
-    this.setState({[name]: value});
+    this.setState({[event.target.name]: event.target.value});
+  }
+
+  handleSubmit = event => {
+    event.preventDefault();
   }
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
       <h4>Make an appointment</h4>
       <p>Date</p>
       <DatePicker
@@ -84,7 +85,7 @@ export default class FormAppointment extends Component {
         name='remark'
         onChange={this.handleChange}
       />
-
+      <input type="submit" value="Submit" />
       </form>
     );
   }
