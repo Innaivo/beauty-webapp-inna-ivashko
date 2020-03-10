@@ -46,11 +46,11 @@ export default class FormAppointment extends Component {
           </Banner>
       </StyledHero>
 
-      <form onSubmit={this.handleSubmit}>
-      <h4>Make an appointment</h4>
-      <p>Date</p>
+      <form className="booking-form" onSubmit={this.handleSubmit} >
+      <h6 className="form-title">Make an appointment</h6>
+      <p>Date</p>      
       <DatePicker
-        dateFormat="MMMM d, yyyy"
+      dateFormat="MMMM d, yyyy"
         selected={this.state.date}
         onChange={date => this.setState({date: date})}
       />
@@ -99,7 +99,7 @@ export default class FormAppointment extends Component {
         name='remark'
         onChange={this.handleChange}
       />
-      <input type="submit" value="Submit" />
+      <input id="btn-submit" type="submit" value="Submit" />
       </form>
     </>
     );

@@ -642,5 +642,49 @@ th{
 
 
 /* appointment form  */
+.booking-form {
+  padding: 5em 10em;
+}
+.booking-form > label,
+.booking-form > select,
+.booking-form > input,
+.booking-form > textarea {
+  display: block;
+  width: 240px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid #888;
+  font-size: 14px;
+}
+form {
+  padding: 1.5em;
+  line-height: 1.5;
+  font-size: x-large;
+  font-family: felix-titling;
+}
 
+.form-title {
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-submit {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100px;
+}
+#btn-submit:hover {
+  background: transparent;
+  color: #7d6a51;
+}
 /* end of appointment form  */
