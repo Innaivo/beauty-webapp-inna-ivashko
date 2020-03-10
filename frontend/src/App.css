@@ -645,7 +645,7 @@ th{
 .booking-form {
   padding: 5em 10em;
 }
-.booking-form > label,
+.booking-form .react-datepicker__input-container input,
 .booking-form > select,
 .booking-form > input,
 .booking-form > textarea {
@@ -654,20 +654,21 @@ th{
   padding: 4px 8px;
   margin-bottom: 8px;
   border-radius: 3px;
-  border: 1px solid #888;
-  font-size: 14px;
+  border: 1px solid #d4c7b5;
+  font-size: x-large;
+  font-family: felix-titling;
 }
 form {
   padding: 1.5em;
   line-height: 1.5;
   font-size: x-large;
-  font-family: felix-titling;
+  font-family: sans-serif;
 }
 
 .form-title {
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1.5em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
 }
 
 #btn-submit {
@@ -675,13 +676,14 @@ form {
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
   color: var(--mainBlack);
-  background: var(--primaryColor);
+  background: #d4c7b5;
   padding: 0.4rem 0.9rem;
-  border: 1px solid var(--primaryColor);
+  border: 1px solid #d4c7b5;
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
-  width: 100px;
+  width: 135px;
+  font-family: sans-serif;
 }
 #btn-submit:hover {
   background: transparent;
