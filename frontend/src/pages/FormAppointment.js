@@ -7,6 +7,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
 import defaultBcg from '../images/service-1.jpg';
+const data = {date: '18 March 2020'};
+
 
 export default class FormAppointment extends Component {
   constructor(props) {
@@ -31,7 +33,31 @@ export default class FormAppointment extends Component {
     this.setState({[event.target.name]: event.target.value});
   }
 
+  // handleSubmit = event => {
+  //   fetch('/lala')
+  //   .then(bla => bla.json())
+  //   .then(data => console.log(data));
+
+  //   event.preventDefault();
+  // }
+
   handleSubmit = event => {
+    fetch('/appointment', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    })
+    .then((myResponse) => myResponse.json())
+    .then((myData) => {
+      // console.log('Success:', myData)
+      if (myData.success){
+        console.log('Hi');
+        this.props.history.push('/');
+      };
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
     event.preventDefault();
   }
 

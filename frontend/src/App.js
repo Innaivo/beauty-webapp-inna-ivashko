@@ -21,7 +21,7 @@ function App() {
     <Route exact path="/pricelist/" component={Pricelist}/>
     <Route exact path="/pricelist/:slug" component={SingleService}/>
     <Route exact path="/contact/" component={Contact}/>
-    <Route exact path="/appointment/" component={FormAppointment}/>
+    <Route exact path="/booking/" component={FormAppointment}/>
     <Route component={Error}/>
 
   </Switch>
