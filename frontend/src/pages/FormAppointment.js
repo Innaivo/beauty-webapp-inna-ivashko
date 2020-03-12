@@ -7,7 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
 import defaultBcg from '../images/service-1.jpg';
-const data = {date: '18 March 2020'};
+//const data = {date: '18 March 2020'};
 
 
 export default class FormAppointment extends Component {
@@ -22,7 +22,6 @@ export default class FormAppointment extends Component {
       email: '',
       remark: ''
     };
-    // this.handleChange = this.handleChange.bind(this);
   }
   handleChange = event =>{
     // if (name === "phone") {
@@ -42,13 +41,16 @@ export default class FormAppointment extends Component {
   // }
 
   handleSubmit = event => {
+    let lala = event.target;
+    let data = {date: lala[0].value, service: lala[1].value};
+    console.log(JSON.stringify(data));
     fetch('/appointment', {
       method: 'POST',
       body: JSON.stringify(data),
     })
     .then((myResponse) => myResponse.json())
     .then((myData) => {
-      // console.log('Success:', myData)
+      //console.log('Success:', myData);
       if (myData.success){
         console.log('Hi');
         this.props.history.push('/');
