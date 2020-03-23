@@ -41,11 +41,15 @@ export default class FormAppointment extends Component {
   // }
 
   handleSubmit = event => {
-    let lala = event.target;
-    let data = {date: lala[0].value, service: lala[1].value};
+    let form = event.target;
+    let data = {date: form[0].value, service: form[1].value, time: form[2].value, 
+      username: form[3].value, phone: form[4].value, email: form[5].value , remark: form[6].value};
     console.log(JSON.stringify(data));
     fetch('/appointment', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify(data),
     })
     .then((myResponse) => myResponse.json())

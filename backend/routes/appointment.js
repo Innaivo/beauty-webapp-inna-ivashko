@@ -20,7 +20,7 @@ router.post('/', (req, res, next) => {
                   email: req.body.email,
                   remark: req.body.remark
                 });
-            // console.log(appointment);
+            //console.log(appointment);
             appointment.save(err =>
                 {if (err)
                      return next(err)});
