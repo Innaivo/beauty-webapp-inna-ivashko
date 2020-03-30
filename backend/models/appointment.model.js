@@ -8,7 +8,7 @@ const AppointmentSchema = new Schema({
 'Men Haircut', 'Boys Haircut']},
     time: {type: String, required: true},
     username: {type: String, required: true},//, min: 3
-    phone: {type: String, required: true},//pattern: '^06*[0-9]{8}$'
+    phone: {type: String, required: true, pattern: '^06*[0-9]{8}$'},//
     email: {type: String, required: true},
     remark: {type: String}
 });

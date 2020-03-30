@@ -20,7 +20,8 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 19px;
   line-height: 1.4;
 }
 h1 {
@@ -156,6 +157,7 @@ h6 {
 
 .show-nav {
   height: 220px;
+  display: grid;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -629,21 +631,13 @@ th{
    margin-bottom: 40px;
    text-align: center;
  }
-  .footer-distributed .footer-center i{
-   margin-left: 0;
- }
- /* table{
-   margin: 0 auto;
-   text-align: left;
- } */
-
 }
 /* contacts */
 
 
 /* appointment form  */
 .booking-form {
-  padding: 5em 10em;
+  padding: 4em 30em;
 }
 .booking-form .react-datepicker__input-container input,
 .booking-form > select,
@@ -690,3 +684,9 @@ form {
   color: #7d6a51;
 }
 /* end of appointment form  */
+
+@media (max-width: 880px) {
+  .booking-form{
+    padding: 2rem 2rem 0rem 2rem;
+ }
+}

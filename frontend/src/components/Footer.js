@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo2.svg';
+import logo from '../images/logo.svg';
 import { Link } from 'react-router-dom';
 import {MdLocationOn, MdPhone} from "react-icons/md";
 import {AiFillFacebook, AiOutlineInstagram} from "react-icons/ai";

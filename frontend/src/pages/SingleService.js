@@ -16,7 +16,6 @@ export default class SingleService extends Component {
         }  
     }
     static contextType = ServiceContext;
-    //componentDidMount(){}
     render() {
         const {getService} = this.context;
         const service = getService(this.state.slug);

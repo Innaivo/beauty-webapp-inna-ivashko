@@ -3,12 +3,6 @@ export const router = express.Router();
 
 let Appointment = require('../models/appointment.model.js');
 
-
-/* GET users listing. */
-// router.get('/', function(req, res, next) {
-//     res.json({ username: 'Flavio' });
-// });
-
 router.post('/', (req, res, next) => {
     console.log(JSON.stringify(req.body));
             let appointment = new Appointment(
@@ -20,7 +14,6 @@ router.post('/', (req, res, next) => {
                   email: req.body.email,
                   remark: req.body.remark
                 });
-            //console.log(appointment);
             appointment.save(err =>
                 {if (err)
                      return next(err)});
