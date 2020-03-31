@@ -12,9 +12,8 @@ export default class FormAppointment extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date(),
       service: '',
-      time: '',
+      date: new Date(),
       username: '',
       phone: null,
       email: '',
@@ -33,7 +32,7 @@ export default class FormAppointment extends Component {
   handleSubmit = event => {
     let form = event.target;
     let data = {date: form[0].value, service: form[1].value, time: form[2].value, 
-      username: form[3].value, phone: form[4].value, email: form[5].value , remark: form[6].value};
+      username: form[3].value, phone: form[4].value, email: form[5].value};
     console.log(JSON.stringify(data));
     fetch('/appointment', {
       method: 'POST',
@@ -69,12 +68,6 @@ export default class FormAppointment extends Component {
 
       <form className="booking-form" onSubmit={this.handleSubmit} >
       <h5 className="form-title">Make an appointment</h5>
-      <p>Date</p>      
-      <DatePicker
-      dateFormat="MMMM d, yyyy"
-        selected={this.state.date}
-        onChange={date => this.setState({date: date})}
-      />
       <p>Service</p>
       <select val={this.state.service} onChange={this.handleChange}>
       <option val="manicure">Manicure</option>
@@ -86,16 +79,18 @@ export default class FormAppointment extends Component {
       <option val="men haircut">Men Haircut</option>
       <option val="boys haircut">Boys Haircut</option>
       </select>
-      <p>Time</p>
+      <p>Date and time</p>
+      <div>      
       <DatePicker
-        selected={this.state.time}
-        onChange={date => this.setState({time: date})}
+        selected={this.state.date}
+        onChange={date => this.setState({date: date})}
         showTimeSelect
-        showTimeSelectOnly
+        timeFormat="HH:mm"
         timeIntervals={45}
-        timeCaption="Time"
-        dateFormat="h:mm aa"
+        timeCaption="time"
+        dateFormat="MMMM d, yyyy h:mm aa"
       />
+      </div>
       <p>Name</p>
       <input
         type='text'

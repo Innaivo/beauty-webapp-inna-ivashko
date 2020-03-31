@@ -6,9 +6,8 @@ let Appointment = require('../models/appointment.model.js');
 router.post('/', (req, res, next) => {
     console.log(JSON.stringify(req.body));
             let appointment = new Appointment(
-                { date: req.body.date,
-                  service: req.body.service,
-                  time: req.body.time,
+                { service: req.body.service,
+                  date: req.body.date,
                   username: req.body.username,
                   phone: req.body.phone,
                   email: req.body.email,
