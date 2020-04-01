@@ -15,9 +15,10 @@
     "mongoose": "^5.9.3"
   },
   "scripts": {
-    "start": "nodemon server.js",
-    "frontend": "cd frontend && npm run devstart",
-    "devstart": "concurrently --kill-others-on-fail \"npm start\" \"npm run frontend\" ",
-    "build": ""
+    "devstart-backend": "nodemon server.js",
+    "devstart-frontend": "cd frontend && npm run devstart",
+    "devstart": "concurrently --kill-others-on-fail \"npm run devstart-backend\" \"npm run devstart-frontend\" ",
+    "start": "node server.js",
+    "build": "cd frontend && react-scripts build"
   }
 }
