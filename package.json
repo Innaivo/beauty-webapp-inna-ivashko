@@ -19,6 +19,6 @@
     "devstart-frontend": "cd frontend && npm run devstart",
     "devstart": "concurrently --kill-others-on-fail \"npm run devstart-backend\" \"npm run devstart-frontend\" ",
     "start": "NODE_ENV=production node server.js",
-    "build": "cd frontend && react-scripts build"
+    "build": "cd frontend && npm install && react-scripts build"
   }
 }
