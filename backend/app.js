@@ -7,7 +7,7 @@ import bodyParser from 'body-parser';
 
 const app = express();
 
-var dev_db_url = 'mongodb+srv://Innadb:August@2019@cluster0-73lcp.azure.mongodb.net/appointment_beauty?retryWrites=true&w=majority';
+var dev_db_url = 'mongodb+srv://someUser:somePassword@cluster0-73lcp.azure.mongodb.net/appointment_beauty?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
