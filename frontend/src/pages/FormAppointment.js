@@ -21,11 +21,6 @@ export default class FormAppointment extends Component {
     };
   }
   handleChange = event =>{
-    // if (name === "phone") {
-    //   if (!Number(value)) {
-    //     alert("Phone must be a number");
-    //   }
-    // }
     this.setState({[event.target.name]: event.target.value});
   }
 

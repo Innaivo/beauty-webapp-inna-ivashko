@@ -611,14 +611,8 @@ th{
   width: 50%;
 }
 
-/* .contacts .contacts-info,
-.contacts .contacts-map,{
-	display: inline-block;
-} */
-
 #map {
-  height: 100px;  /* The height is 400 pixels */
-/*   width: 100%;  /* The width is the width of the web page */ 
+  height: 100px; 
   box-sizing: border-box;
 }
 

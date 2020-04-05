@@ -6,8 +6,8 @@ const AppointmentSchema = new Schema({
 'Manicure + Gel Polish', 'Pedicure', 'Pedicure + Nail Polish', 'Pedicure + Gel Polish', 
 'Men Haircut', 'Boys Haircut']},
     date: {type: Date, required: true},
-    username: {type: String, required: true},//, min: 3
-    phone: {type: String, required: true},//, pattern: '^06*[0-9]{8}$'
+    username: {type: String, required: true},
+    phone: {type: String, required: true},
     email: {type: String, required: true},
     remark: {type: String}
 });
